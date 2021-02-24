@@ -1,0 +1,16 @@
+
+@font-face {
+  font-family: 'FontleroyBrown';
+  src: url('FontleroyBrown.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FontleroyBrown';
+  src:  url(data:application/x-font-woff;charset=utf-8;base64,) format('woff'), url('FontleroyBrown.ttf')  format('truetype'), url('FontleroyBrown.svg#FontleroyBrown') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'FONTLERO';
+    src: url('fonts/FONTLERO.eot');
+    src: url('fonts/FONTLERO.eot') format('embedded-opentype'),
+         url('fonts/FONTLERO.woff2') format('woff2'),
+         url('fonts/FONTLERO.woff') format('woff'),
+         url('fonts/FONTLERO.ttf') format('truetype'),
+         url('fonts/FONTLERO.svg#FONTLERO') format('svg');
+}
