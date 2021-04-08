@@ -7,9 +7,9 @@ $reg_password=$_POST['reg_password'];
 $reg_email=$_POST['reg_email'];
 $reg_confirm=$_POST['reg_confirm'];
 $reg_phone=$_POST['reg_phone'];
-$reg_student=$_POST['reg_student'];
-$reg_postcode=$_POST['reg_postcode'];
-$reg_address=$_POST['reg_address'];
+$reg_card_name=$_POST['reg_card_name'];
+$reg_card_number=$_POST['reg_card_number'];
+$reg_card_date=$_POST['reg_card_date'];
 
 // server conection variables 
 
@@ -23,21 +23,21 @@ if($reg_password==$reg_confirm){
 
                                  if(mysqli_num_rows($result)!=1){
 
-                                    mysqli_query($connection,"INSERT INTO Customers(ID,Name,Surname,Email,Phone,Password,Student,Postcode,Address)
-                                    VALUES('0','$reg_name','$reg_surname','$reg_email','$reg_phone','$reg_password','$reg_Student','$reg_postcode','$reg_address')");
-                                    header('refresh:1;url="http://ritxykun.com/50WEB/loginform.php"');
+                                    mysqli_query($connection,"INSERT INTO Customers(ID,Name,Surname,Email,Phone,Password,card_name,card_number,card_date)
+                                    VALUES('0','$reg_name','$reg_surname','$reg_email','$reg_phone','$reg_password','$reg_card_name','$reg_card_number','$reg_card_date')");
+                                    header('refresh:1;url="../loginform.php"');
                                     echo "new username register"."<br>";
 
                                  }
 
                                 else{
-                                    header('refresh:1;url=http://ritxykun.com/50WEB/loginform.php');
+                                    header('refresh:1;url="../loginform.php"');
                                     echo "Username or Email already exists"."<br/>";
                                     echo "Please select another username"."<br/>";}
 
                                 }
          else{
-            header('refresh:1;url="http://ritxykun.com/50WEB/registerform.php"');
+            header('refresh:1;url="registerform.php"');
             echo' Passwords must be the same';
          }                       
 
